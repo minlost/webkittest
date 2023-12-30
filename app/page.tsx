@@ -1,13 +1,15 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <main className="">
-      <div className="bg-red-200 w-full"> this is header</div>
-      <div className="bg-red-500 w-full absolute bottom-0 left-0 ">
-        {" "}
-        this is footer
+    <div className="">
+      <div className="min-h-screen flex flex-col">
+        <main className="flex-grow">
+          <div className="bg-red-200 w-full">this is header</div>
+        </main>
+        <div className="bg-red-500 w-full mt-auto">
+          this bottom part of 100vh
+        </div>
       </div>
-    </main>
+      <div className="bg-blue-200 h-64">next part</div>
+    </div>
   );
 }
