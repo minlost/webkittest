@@ -21,8 +21,9 @@ export default function Home() {
       <div className="bg-blue-200 h-64">next part</div>
       <div className="bg-red-500 w-full ">this bottom part</div>
       {open && (
-        <div className="w-[30%] bg-red-500 fixed right-0 top-0 h-full">
-          sidebar
+        <div className="w-[30%] bg-red-500 fixed right-0 top-0 h-full flex flex-col justify-between">
+          <div className="">LOGO</div>
+          <div className="">Adress</div>
         </div>
       )}
     </div>
